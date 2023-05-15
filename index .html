@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papeleria Entrega</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css">
+
+
+</head>
+
+
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#page-top"><img src="img/Logo 2Diseño.png"></img></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#!">Ir al perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Salir</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container px-5">
+                <h1 class="masthead-heading mb-0">Bienvenido!</h1>
+                <h2 class="masthead-subheading mb-0">Aquí puedes agregar tus nuevos productos...</h2>
+                <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Ir a agregar</a>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <!-- Content section 1-->
+    <section id="scroll">
+        <section class="row m-5">
+            <div class="col-12 col-md-6">
+                <nav id="nav-tab" class="nav nav-pills nav-justified">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" href="#cuadernos">Cuadernos</a>
+                    <a class="nav-link" href="#mochilas">Mochilas</a>
+                    <a class="nav-link" href="#regalos">Regalos</a>
+                </nav>
+
+                <div class="tab-content">
+
+                    <div id="home" class="tab-pane active">
+                        <h1 class="text-center mt-5">Elije el producto a agregar</h1>
+                        <img src="img/animacionCajas.gif" class="d-block mt-5 mx-auto" alt="">
+                    </div>
+
+                    <div class="tab-pane" id="cuadernos">
+                        <h2 class="text-center mt-5">Ingresa el nuevo cuaderno</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="nombreC">Nombre</label>
+                                <input type="text" class="form-control" id="nombreC"
+                                    placeholder="Ingresa el nombre del producto">
+                            </div>
+                            <div class="form-group">
+                                <label for="codigoC">Código</label>
+                                <input type="text" class="form-control" id="codigoC"
+                                    placeholder="Ingresa el código del producto">
+                            </div>
+                            <div class="form-group">
+                                <label for="precioC">Precio</label>
+                                <input type="number" class="form-control" id="precioC" placeholder="Ingresa el precio">
+                            </div>
+                            <div class="form-group">
+                                <label for="marcaC">Marca</label>
+                                <input type="text" class="form-control" id="marcaC" placeholder="Ingresa la marca">
+                            </div>
+                            <div class="form-group">
+                                <label for="cantidadHojasC">Cantidad de hojas</label>
+                                <input type="number" class="form-control" id="cantidadHojasC"
+                                    placeholder="Ingresa la cantidad de hojas">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipoTapaC">Tapa</label>
+                                <select class="form-select" id="tipoTapaC">
+                                    <option selected disabled>Elije el tipo de tapa</option>
+                                    <option>Tapa dura</option>
+                                    <option>Tapa blanda</option>
+                                    <option>Ecológica dura</option>
+                                    <option>Ecológica blanda</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipoMaterialC">Material</label>
+                                <select class="form-select" id="tipoMaterialC">
+                                    <option selected disabled>Elije un tipo de material</option>
+                                    <option>Clásico</option>
+                                    <option>Caña de azucar (Ecológico)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipoHojaC">Tipo de Hoja</label>
+                                <select class="form-select" id="tipoHojaC">
+                                    <option selected disabled>Elije un tipo de hoja</option>
+                                    <option>Clásica lisa</option>
+                                    <option>Reciclada lisa</option>
+                                    <option>Clásica con renglones</option>
+                                    <option>Reciclada con renglones</option>
+                                </select>
+                            </div>
+
+                            <button type="button" id="btIngresarC" class="btn btn-primary">Agregar</button>
+                            <button type="button" id="btMostrarC" class="btn btn-primary">Mostrar</button>
+                    </div>
+
+                    </form>
+
+
+                    <div class="tab-pane" id="mochilas">
+                        <h2 class="text-center mt-5">Ingresa la nueva mochila</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="nombreM">Nombre</label>
+                                <input type="text" class="form-control" id="nombreM"
+                                    placeholder="Ingresa el nombre del producto">
+                            </div>
+                            <div class="form-group">
+                                <label for="codigoM">Código</label>
+                                <input type="text" class="form-control" id="codigoM"
+                                    placeholder="Ingresa el código del producto">
+                            </div>
+                            <div class="form-group">
+                                <label for="precioM">Precio</label>
+                                <input type="number" class="form-control" id="precioM" placeholder="Ingresa el precio">
+                            </div>
+                            <div class="form-group">
+                                <label for="marcaM">Marca</label>
+                                <input type="text" class="form-control" id="marcaM" placeholder="Ingresa la marca">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="materialM">Material</label>
+                                <select class="form-select" id="materialM">
+                                    <option selected disabled>Elije el Material</option>
+                                    <option>Nylon</option>
+                                    <option>Nylon (impermeable)</option>
+                                    <option>Poliester</option>
+                                    <option>Lienzo de algodón o lona</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipoM">Tapa</label>
+                                <select class="form-select" id="tipoM">
+                                    <option selected disabled>Elije el tipo de mochila</option>
+                                    <option>Básicas</option>
+                                    <option>Carrito</option>
+                                    <option>Lunchera</option>
+                                    <option>Personajes</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipoUsoM">Tipo de uso</label>
+                                <select class="form-select" id="tipoUsoM">
+                                    <option selected disabled>Elije el tipo de uso para la mochila
+                                    </option>
+                                    <option>Escolares</option>
+                                    <option>Trabajo</option>
+                                    <option>Juveniles</option>
+                                    <option>Aire libre</option>
+                                </select>
+                            </div>
+
+                            <button type="button" id="btIngresarM" class="btn btn-primary">Agregar</button>
+                            <button type="button" id="btMostrarM" class="btn btn-primary">Mostrar</button>
+
+                    </div>
+
+                    <div class="tab-pane" id="regalos">
+                        <h2 class="text-center mt-5">Ingresa el nuevo regalo</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="nombreR">Nombre</label>
+                                <input type="text" class="form-control" id="nombreR"
+                                    placeholder="Ingresa el nombre del producto">
+                            </div>
+                            <div class="form-group">
+                                <label for="codigoR">Código</label>
+                                <input type="text" class="form-control" id="codigoR"
+                                    placeholder="Ingresa el código del producto">
+                            </div>
+                            <div class="form-group">
+                                <label for="precioR">Precio</label>
+                                <input type="number" class="form-control" id="precioR" placeholder="Ingresa el precio">
+                            </div>
+                            <div class="form-group">
+                                <label for="marcaR">Marca</label>
+                                <input type="text" class="form-control" id="marcaR" placeholder="Ingresa la marca">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipoR">Tipo</label>
+                                <select class="form-select" id="tipoR">
+                                    <option selected disabled>Elije el tipo de regalo</option>
+                                    <option>Joyas</option>
+                                    <option>Juguetes</option>
+                                    <option>Souvenires</option>
+                                    <option>Arte</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ocasionR">Ocasión</label>
+                                <select class="form-select" id="ocasionR">
+                                    <option selected disabled>Elije una ocasión para tu regalo</option>
+                                    <option>Cumpleaño</option>
+                                    <option>Reunión formal</option>
+                                    <option>Reunión informal</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="edadR">Edad</label>
+                                <select class="form-select" id="edadR">
+                                    <option selected disabled>Edad de la persona</option>
+                                    <option>0-14</option>
+                                    <option>15-25</option>
+                                    <option>más de 26</option>
+                                </select>
+                            </div>
+
+                            <button type="button" id="btIngresarR" class="btn btn-primary">Agregar</button>
+                            <button type="button" id="btMostrarR" class="btn btn-primary">Mostrar</button>
+
+                    </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="row" id="mostrarProducto"></div>
+                <!-- <div class="form-group">
+                    <select class="form-select" id="filtrarMaterialCuaderno">
+                        <option selected disabled></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div> -->
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-black">
+        <div class="container px-5">
+            <p class="m-0 text-center text-white small">Copyright - Diego Rivero - 247222</p>
+        </div>
+    </footer>
+
+
+    <script src="js/codigo.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
